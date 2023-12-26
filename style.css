@@ -1,0 +1,150 @@
+:root{
+    --black: #3A3A3A;
+    --pink: #E02C6D;
+    --light-gray: #787885;
+    --gray: #6C6C6C;
+    --background-primary: #0A0826;
+    --primary-font: 'Poppins', sans-serif;
+
+}
+
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    font-family: var(--primary-font);
+}
+
+.container{
+    width: 100%;
+    max-width: 1440px;
+    margin: 0 auto;
+    padding: 30px 25px;
+}
+
+.btn{
+    border: none;
+    background-color: var(--pink);
+    color: white;
+    display: flex;
+    align-items: end;
+    border-radius: 40px;
+    gap: 5px;
+    padding: 5px 15px;
+    font-weight: 700;
+    margin-top: 20px;
+}
+
+nav{
+    display: flex;
+    justify-content: space-between;
+}
+
+.nav-items{
+    display: flex;
+    gap: 25px;
+}
+
+nav ul{
+     display: flex;
+     list-style: none;
+     gap: 25px;
+     font-weight: 500;
+}
+
+.banner{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.title{
+    font-size: 3rem;
+    color: var(--black);
+}
+
+.camera{
+    background-image: url(./images/Circle\ design.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.line{
+    height: 1px;
+    background: linear-gradient(to right, rgba(192, 204, 218, 0.1), rgba(192, 204, 218, 0.6), rgba(192, 204, 218, 0.1));
+}
+
+.logo-container{
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    padding: 20px 0;
+}
+
+.gallery-title{
+    font-size: 2rem;
+    color: var(--black);
+    text-align: center;
+}
+
+.gallery{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+    padding: 30px 0;
+}
+
+.card{
+    padding: 15px;
+    box-shadow: 1px 2px 5px rgb(234, 233, 233);
+}
+
+.card > img{
+    width: 100%;
+}
+
+.card > h1{
+    font-size: 1.5rem;
+    color: var(--black);
+    padding: 5px 0;
+}
+
+.card > p{
+    color: var(--gray);
+    font-weight: 500;
+}
+
+.price{
+    color: var(--black);
+    font-size: 1.5rem;
+}
+
+.ratings{
+    display: flex;
+}
+
+.ratings > p{
+    margin-left: 10px;
+    color: var(--gray);
+    font-weight: 500;
+}
+
+.btn-secondary{
+    color: var(--pink);
+    border: none;
+    background: none;
+    display: flex;
+    align-items: end;
+    font-size: large;
+    gap: 5px;
+    font-weight: 700;
+    margin-top: 20px;
+}
+
+.btn-div{
+    justify-content: end;
+    display: flex;
+}
